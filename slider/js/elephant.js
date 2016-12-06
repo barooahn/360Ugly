@@ -8,7 +8,7 @@ var frames = SpriteSpin.sourceArray('slider/images/elephant/DSC_{frame}.jpg', {
 var details = [407, 436];
 // the current index in the details array
 var detailIndex = 0;
-var spin = $('#elephant');
+var spin = $('.elephant');
 // initialise spritespin
 spin.spritespin({
     source: frames,

@@ -11,7 +11,7 @@ var frames = SpriteSpin.sourceArray('slider/images/flowers/DSC_{frame}.jpg', {
 var details = [457, 485];
 // the current index in the details array
 var detailIndex = 0;
-var spin = $('#flowers');
+var spin = $('.flowers');
 // initialise spritespin
 spin.spritespin({
     source: frames,
