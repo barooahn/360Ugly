@@ -50,6 +50,20 @@ header{
   color: transparent;
 }
 
+.how-work, .our-work, .pricing, .contact{
+  padding-top: 50px;
+}
+
+
+.modal-spin{
+  max-width: 100%;
+}
+.spritespin-canvas{
+  left:0 !important;
+  right:0 !important;
+  margin: 0 auto;
+}
+
 .spinner {
   margin: 100px auto;
   width: 40px;
@@ -97,4 +111,14 @@ header{
     transform: scale(1.0);
     -webkit-transform: scale(1.0);
   }
+}
+
+
+/*how it works*/
+.rollover-how-work{
+  padding: 10px;
+}
+
+#how-work-detail{
+  width: 100%;
 }
