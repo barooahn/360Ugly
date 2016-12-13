@@ -71,7 +71,7 @@
             </div>
             <!-- /.container -->
         </nav>
-        <div class="container">
+        <div class="container-fluid">
             <header class="clearfix">
                 <span>
                     360 Product Photography
@@ -135,11 +135,42 @@
                     <h1>
                         We can provide different sizes and options for the animation
                     </h1>
-                    <button class="btn btn-success">
+                    <button class="btn btn-primary btn-lg">
                         More details
                     </button>
                 </div>
             </div>
+            <a name="get-results">
+            </a>
+            <div class="container-fluid get-results full-height">
+                <div class="text-center get-results-padding">
+                    <h2>
+                        Do you want to
+                    </h2>
+                    <h2>
+                        <b>
+                            GET RESULTS
+                        </b>
+                        from your new website?
+                    </h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-sm-12 get-results-left">
+                        <img alt="" class="img-responsive" src="slider/images/200up.png"/>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <h3 class="get-results-text">
+                            Our clients typically get a 200% increase in the number of sales through theirnew website
+                        </h3>
+                        <a class="btn btn-primary btn-lg" href="#">
+                            <span class="network-name">
+                                Find Out How
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--end container-->
             <a name="how-work">
             </a>
             <div class="how-work full-height">
@@ -150,28 +181,32 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
-                                <a class="rollover-how-work" aria-controls="how-work-detail" aria-expanded="false" class="btn btn-primary" data-toggle="collapse" href="#how-work-detail">
+                                <a aria-controls="fill-out-form" aria-expanded="false" class="rollover-how-work" data-toggle="collapse" href="#fill-out-form">
                                     <img class="img-responsive" src="slider/images/hiw-form.png">
                                     </img>
                                     <h4>
                                         FILL OUT FORM
                                     </h4>
                                 </a>
-                                
-                                <div class="collapse" id="how-work-detail">
+                                <div class="collapse" id="fill-out-form">
                                     <div class="well">
-                                        ...
+                                        Give us details of the product(s) you want to make 360 and the address for collection and we will do the rest.
                                     </div>
                                 </div>
                             </div>
                             <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
-                                <a class="rollover-how-work" href="#">
+                                <a aria-controls="delivery" aria-expanded="false" class="rollover-how-work" data-toggle="collapse" href="#delivery">
                                     <img class="img-responsive" src="slider/images/hiw-delivery.png">
                                     </img>
                                     <h4>
                                         GIVE PRODUCT TO COURIER
                                     </h4>
                                 </a>
+                                <div class="collapse" id="delivery">
+                                    <div class="well">
+                                        We will arrange for a courier to collect your product(s).  Just specify a day that is convienet for you and we will let you know the details when a courier has been arranged.
+                                    </div>
+                                </div>
                             </div>
                             <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
                                 <a class="rollover-how-work" href="#">
@@ -209,16 +244,116 @@
             <a name="pricing">
             </a>
             <div class="pricing full-height">
-                <h1>
-                    Pricing
-                </h1>
+                <div class="container ">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-4">
+                            <div class="one-product">
+                                <h3>
+                                    one product
+                                </h3>
+                                <hr>
+                                    <div class="pricing-img">
+                                        <img class="img-responsive" src="slider/images/pricing97.png">
+                                        </img>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            Free collection
+                                        </li>
+                                        <li>
+                                            Product Photographed
+                                        </li>
+                                        <li>
+                                            Approve before buying
+                                        </li>
+                                        <li>
+                                            Free download
+                                        </li>
+                                    </ul>
+                                    <div class="pricing-button">
+                                        <button class="btn btn-primary btn-lg">
+                                            Start Now
+                                        </button>
+                                    </div>
+                                </hr>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-4">
+                            <div class="two-products">
+                                <h3>
+                                    two products
+                                </h3>
+                                <hr>
+                                </hr>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-4">
+                            <div class="more-products">
+                                <h3>
+                                    more products
+                                </h3>
+                                <hr>
+                                </hr>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <a name="contact">
             </a>
             <div class="contact full-height">
-                <h1>
-                    Contact
-                </h1>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="">
+                            <h1>
+                                Request A Free Quote
+                            </h1>
+                            <h3>
+                                <span>
+                                    Fill in the details below,
+                                </span>
+                                and we will contact you right away
+                            </h3>
+                        </div>
+                    </div>
+                    <span id="form_msg_quote_form">
+                    </span>
+                    <form action="index.php" id="contact_us_form_quote_form" method="post" role="form">
+                        <div class="form-group row">
+                            <div class="col-md-4 form-padding">
+                                <span class="name1 error_message">
+                                </span>
+                                <input class="form-control myform2" id="name1" name="name" placeholder="Your name  *" type="text"/>
+                            </div>
+                            <div class="col-md-4 form-padding">
+                                <span class="email1 error_message">
+                                </span>
+                                <input class="form-control myform2" id="email1" name="email" placeholder="Your email  *" type="email"/>
+                            </div>
+                            <div class="col-md-4 form-padding">
+                                <span class="telephone1 error_message">
+                                </span>
+                                <input class="form-control myform2" id="telephone1" name="telephone" placeholder="Your telphone number  *" type="text"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <textarea class="form-control myform2" id="message1" name="message" placeholder="Your message" rows="3" style="margin-top:0 !important; height:80px;padding-top: 11px;">
+                                    </textarea>
+                                    <span class="message1 error_message2">
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="btn btn-primary btn-lg" href="https://twitter.com/SBootstrap">
+                            <span class="network-name">
+                                SEND
+                            </span>
+                        </a>
+                    </form>
+                </div>
+                <!--end container-->
             </div>
         </div>
         <!--end of main container-->

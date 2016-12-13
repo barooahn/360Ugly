@@ -1,124 +1,202 @@
-@import url("https://fast.fonts.net/t/1.css?apiType=css&projectid=80e28af1-c55a-418c-ba9b-ef8ad283d277");
-@font-face {
-    font-family: "Geogrotesque W01_n2";
-    src: url("63fbd07b-fc33-4d94-abb1-3b576ac4e12a.eot?#iefix") format("eot")
-}
-
-@font-face {
-    font-family: "Geogrotesque W01";
-    src: url("63fbd07b-fc33-4d94-abb1-3b576ac4e12a.eot?#iefix");
-    src: url("63fbd07b-fc33-4d94-abb1-3b576ac4e12a.eot?#iefix") format("eot"), url("7e30984c-ffa9-4748-926e-d305f5755e8f.woff2") format("woff2"), url("853f60c4-e57f-494d-97ab-5da22dbc8e95.woff") format("woff"), url("6eb035ef-f32b-4ff2-bfde-92306d6f3774.ttf") format("truetype"), url("f816e847-6155-42fa-ae24-063c733b5491.svg#f816e847-6155-42fa-ae24-063c733b5491") format("svg");
-    font-weight: 200;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "Geogrotesque W01_n5";
-    src: url("40bc667a-fe6b-4600-8320-f66daeb25b06.eot?#iefix") format("eot")
-}
-
-@font-face {
-    font-family: "Geogrotesque W01";
-    src: url("40bc667a-fe6b-4600-8320-f66daeb25b06.eot?#iefix");
-    src: url("40bc667a-fe6b-4600-8320-f66daeb25b06.eot?#iefix") format("eot"), url("dd501f4a-1a91-4d73-b4cf-de3ba26bd793.woff2") format("woff2"), url("149719fe-5b81-4b67-a95a-3a5246a84032.woff") format("woff"), url("4c464889-c33e-4b8c-b182-17a32eb1f7a8.ttf") format("truetype"), url("73abc949-ef23-462e-a62a-355c33a564d6.svg#73abc949-ef23-462e-a62a-355c33a564d6") format("svg");
-    font-weight: 500;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'kg_all_of_meregular';
-    src: url('KGAllofMe-webfont.eot');
-    src: url('KGAllofMe-webfont.eot?#iefix') format('embedded-opentype'), url('KGAllofMe-webfont.woff2') format('woff2'), url('KGAllofMe-webfont.woff') format('woff'), url('KGAllofMe-webfont.ttf') format('truetype'), url('KGAllofMe-webfont.svg#kg_all_of_meregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-body{
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
+@import url(http://fonts.googleapis.com/css?family=Oxygen:400,300,700);
+@import url(http://fonts.googleapis.com/css?family=Sanchez);
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+body {
     background-color: #f1f1f1;
     margin-top: 100px;
+    font-family: 'Open Sans', sans-serif;
 }
 
-header{
-  padding-bottom: 40px !important;
+.btn {
+    padding: 14px 24px;
+    border: 0 none;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.btn:focus, .btn:active:focus, .btn.active:focus {
+    outline: 0 none;
+}
+
+.btn-primary {
+    background: #e25333;
+    color: #ffffff;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+    background: #33a6cc;
+}
+
+.btn-primary:active, .btn-primary.active {
+    background: #007299;
+    box-shadow: none;
+}
+
+header {
+    padding-bottom: 40px !important;
 }
 
 .full-height {
     min-height: 100vh;
 }
 
-.our-work>a{
-  color: transparent;
+.our-work>a {
+    color: transparent;
 }
 
-.how-work, .our-work, .pricing, .contact{
-  padding-top: 50px;
+.how-work, .our-work, .pricing, .contact {
+    padding-top: 50px;
 }
 
-
-.modal-spin{
-  max-width: 100%;
+.modal-spin {
+    max-width: 100%;
 }
-.spritespin-canvas{
-  left:0 !important;
-  right:0 !important;
-  margin: 0 auto;
+
+.spritespin-canvas {
+    left: 0 !important;
+    right: 0 !important;
+    margin: 0 auto;
 }
 
 .spinner {
-  margin: 100px auto;
-  width: 40px;
-  height: 40px;
-  position: relative;
-  text-align: center;
-  
-  -webkit-animation: sk-rotate 2.0s infinite linear;
-  animation: sk-rotate 2.0s infinite linear;
+    margin: 100px auto;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    text-align: center;
+    -webkit-animation: sk-rotate 2.0s infinite linear;
+    animation: sk-rotate 2.0s infinite linear;
 }
 
 .dot1, .dot2 {
-  width: 60%;
-  height: 60%;
-  display: inline-block;
-  position: absolute;
-  top: 0;
-  background-color: #333;
-  border-radius: 100%;
-  
-  -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
-  animation: sk-bounce 2.0s infinite ease-in-out;
+    width: 60%;
+    height: 60%;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    background-color: #333;
+    border-radius: 100%;
+    -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+    animation: sk-bounce 2.0s infinite ease-in-out;
 }
 
 .dot2 {
-  top: auto;
-  bottom: 0;
-  -webkit-animation-delay: -1.0s;
-  animation-delay: -1.0s;
+    top: auto;
+    bottom: 0;
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
 }
 
-@-webkit-keyframes sk-rotate { 100% { -webkit-transform: rotate(360deg) }}
-@keyframes sk-rotate { 100% { transform: rotate(360deg); -webkit-transform: rotate(360deg) }}
+@-webkit-keyframes sk-rotate {
+    100% {
+        -webkit-transform: rotate(360deg)
+    }
+}
+
+@keyframes sk-rotate {
+    100% {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg)
+    }
+}
 
 @-webkit-keyframes sk-bounce {
-  0%, 100% { -webkit-transform: scale(0.0) }
-  50% { -webkit-transform: scale(1.0) }
+    0%, 100% {
+        -webkit-transform: scale(0.0)
+    }
+    50% {
+        -webkit-transform: scale(1.0)
+    }
 }
 
 @keyframes sk-bounce {
-  0%, 100% { 
-    transform: scale(0.0);
-    -webkit-transform: scale(0.0);
-  } 50% { 
-    transform: scale(1.0);
-    -webkit-transform: scale(1.0);
-  }
+    0%, 100% {
+        transform: scale(0.0);
+        -webkit-transform: scale(0.0);
+    }
+    50% {
+        transform: scale(1.0);
+        -webkit-transform: scale(1.0);
+    }
 }
+
+
+/*get-results container*/
+
+.get-results{
+
+    background-color: #f4f0ef;
+    padding-bottom:85px;
+} 
+
+.get-results-left img{ display: block; margin:0 auto;}
+
+.get-results-padding{
+    padding-top: 23%;
+    padding-bottom: 40px;
+}
+
+.get-results-padding h3{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+
+.form-padding {
+    margin-top: 15px;
+}
+
 
 
 /*how it works*/
-.rollover-how-work{
-  padding: 10px;
+
+.rollover-how-work {
+    padding: 10px;
 }
 
-#how-work-detail{
-  width: 100%;
+#how-work-detail {
+    width: 100%;
+}
+
+
+/*pricing*/
+
+.pricing {
+    background-color: #e25333;
+    margin-left: -15px;
+    margin-right: -15px;
+    color: #e25333;
+}
+
+.pricing-img {
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.one-product {
+    background-color: white;
+}
+
+.one-product h3, .two-products h3, .more-products h3, .pricing-button {
+    padding-top: 22px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.two-products {
+    background-color: white;
+}
+
+.more-products {
+    background-color: white;
+}
+
+.pricing ul{
+  padding-top: 22px;
+}
+
+.pricing-button {
+    padding-bottom: 22px;
 }
