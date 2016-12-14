@@ -12,10 +12,10 @@ var framesArray = {
         end: 436,
         digits: 4
     },
-    flowers: {
-        path: 'slider/images/flowers/DSC_{frame}.jpg',
-        start: 457,
-        end: 485,
+    flower2: {
+        path: 'slider/images/flower2/DSC_{frame}.jpg',
+        start: 913,
+        end: 956,
         digits: 4
     },
     fireTruck: {
@@ -24,10 +24,39 @@ var framesArray = {
         end: 536,
         digits: 4
     },
+    baji: {
+        path: 'slider/images/baji/DSC_{frame}.jpg',
+        start: 859,
+        end: 902,
+        digits: 4
+    },
+    book: {
+        path: 'slider/images/book/DSC_{frame}.jpg',
+        start: 805,
+        end: 848,
+        digits: 4
+    },
+    braclet: {
+        path: 'slider/images/braclet/DSC_{frame}.jpg',
+        start: 697,
+        end: 741,
+        digits: 4
+    },
+    flowers3: {
+        path: 'slider/images/flowers3/DSC_{frame}.jpg',
+        start: 968,
+        end: 1010,
+        digits: 4
+    },
+    tmnt: {
+        path: 'slider/images/tmnt/DSC_{frame}.jpg',
+        start: 755,
+        end: 797,
+        digits: 4
+    },
 }
 $(".rollover-modal").click(function(e) {
     e.preventDefault();
-
     var width = $("#360Modal").width() - 20;
     var id360 = $(this).attr("id");
     console.log("ID of rollover = " + id360);
@@ -50,7 +79,6 @@ $(".rollover-modal").click(function(e) {
         detectSubsampling: false,
         animate: true,
     });
-
     $("#360Modal").modal();
     $('#360Modal').on('hidden.bs.modal', function() {
         spin.spritespin("destroy");

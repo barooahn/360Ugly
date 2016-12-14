@@ -3,7 +3,7 @@
 @import url(http://fonts.googleapis.com/css?family=Sanchez);
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 body {
-    background-color: #f1f1f1;
+    background-color: white;
     margin-top: 100px;
     font-family: 'Open Sans', sans-serif;
 }
@@ -124,30 +124,29 @@ header {
 
 /*get-results container*/
 
-.get-results{
-
+.get-results {
     background-color: #f4f0ef;
-    padding-bottom:85px;
-} 
+    padding-bottom: 85px;
+}
 
-.get-results-left img{ display: block; margin:0 auto;}
+.get-results-left img {
+    display: block;
+    margin: 0 auto;
+}
 
-.get-results-padding{
+.get-results-padding {
     padding-top: 23%;
     padding-bottom: 40px;
 }
 
-.get-results-padding h3{
+.get-results-padding h3 {
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
-
-
 .form-padding {
     margin-top: 15px;
 }
-
 
 
 /*how it works*/
@@ -179,22 +178,27 @@ header {
     background-color: white;
 }
 
-.one-product h3, .two-products h3, .more-products h3, .pricing-button {
+.one-product, .two-products, .more-products, .pricing-button {
     padding-top: 22px;
     text-align: center;
     text-transform: uppercase;
 }
 
-.two-products {
+.one-product, .two-products {
+    margin: 15px;
     background-color: white;
 }
 
 .more-products {
     background-color: white;
+    margin-bottom: 20px;
 }
 
-.pricing ul{
-  padding-top: 22px;
+.pricing ul {
+    margin-top: 22px;
+    list-style-type: none;
+    padding: 0;
+    font-size: 17px;
 }
 
 .pricing-button {
