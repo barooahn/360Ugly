@@ -54,6 +54,12 @@ $(".rollover-modal").mouseover(function() {
     $(this).removeClass("blue");
 });
 $(".rollover-modal").click(function(e) {
+    $('.spinner').css({
+            opacity: 1,
+            display: "show"
+        }).animate({
+            opacity: 0
+        }, 'slow');
     e.preventDefault();
     var width = $("#360Modal").width() - 20;
     var id360 = $(this).attr("id");
@@ -79,10 +85,10 @@ $(".rollover-modal").click(function(e) {
     });
     spin.bind("onLoad", function() {
         $('.spinner').css({
-            opacity: 1,
+            opacity: 0,
             display: "none"
         }).animate({
-            opacity: 0
+            opacity: 1
         }, 'slow');
     });
     $("#360Modal").modal();
