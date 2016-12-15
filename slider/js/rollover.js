@@ -56,7 +56,7 @@ $(".rollover-modal").mouseover(function() {
 $(".rollover-modal").click(function(e) {
     $('.spinner').css({
             opacity: 0,
-            display: "show"
+            display: "block"
         }).animate({
             opacity: 1
         }, 'slow');
