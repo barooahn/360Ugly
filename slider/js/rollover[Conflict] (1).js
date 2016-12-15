@@ -48,11 +48,14 @@ var framesArray = {
         digits: 4
     },
 }
-$(".rollover-modal").mouseover(function() {
-    $(this).addClass("blue");
-}).mouseout(function() {
-    $(this).removeClass("blue");
+
+
+$(".thumbs").mouseover(function() {
+    console.log('here');
+  $(this).addClass("blue");
 });
+
+
 $(".rollover-modal").click(function(e) {
     e.preventDefault();
     var width = $("#360Modal").width() - 20;
@@ -76,14 +79,6 @@ $(".rollover-modal").click(function(e) {
         frameTime: 100, // Time in ms between updates. 40 is exactly 25 FPS
         detectSubsampling: false,
         animate: true,
-    });
-    spin.bind("onLoad", function() {
-        $('.spinner').css({
-            opacity: 1,
-            display: "none"
-        }).animate({
-            opacity: 0
-        }, 'slow');
     });
     $("#360Modal").modal();
     $('#360Modal').on('hidden.bs.modal', function() {

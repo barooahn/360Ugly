@@ -41,12 +41,23 @@ header {
     min-height: 100vh;
 }
 
-.our-work>a {
+/*.our-work>a {
     color: transparent;
-}
+}*/
 
 .how-work, .our-work, .pricing, .contact {
     padding-top: 50px;
+}
+
+/*our-work container*/
+
+.thumbs{
+    width: 100%;
+    min-height: 178px !important;
+}
+
+.blue{
+    background-color: blue;
 }
 
 .modal-spin {
