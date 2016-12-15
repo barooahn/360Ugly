@@ -54,7 +54,7 @@ $(".rollover-modal").mouseover(function() {
     $(this).removeClass("blue");
 });
 $(".rollover-modal").click(function(e) {
-    $('.spinner').css({
+    $('.loader').css({
             opacity: 0,
             display: "block"
         }).animate({
@@ -84,7 +84,7 @@ $(".rollover-modal").click(function(e) {
         animate: true,
     });
     spin.bind("onLoad", function() {
-        $('.spinner').css({
+        $('.loader').css({
             opacity: 1,
             display: "none"
         }).animate({
