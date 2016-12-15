@@ -55,10 +55,10 @@ $(".rollover-modal").mouseover(function() {
 });
 $(".rollover-modal").click(function(e) {
     $('.spinner').css({
-            opacity: 1,
+            opacity: 0,
             display: "show"
         }).animate({
-            opacity: 0
+            opacity: 1
         }, 'slow');
     e.preventDefault();
     var width = $("#360Modal").width() - 20;
@@ -85,10 +85,10 @@ $(".rollover-modal").click(function(e) {
     });
     spin.bind("onLoad", function() {
         $('.spinner').css({
-            opacity: 0,
+            opacity: 1,
             display: "none"
         }).animate({
-            opacity: 1
+            opacity: 0
         }, 'slow');
     });
     $("#360Modal").modal();
