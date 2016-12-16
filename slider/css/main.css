@@ -6,6 +6,12 @@ body {
     background-color: white;
     margin-top: 100px;
     font-family: 'Open Sans', sans-serif;
+    color: #313131;
+}
+
+h1{
+    color:#e25333;
+    text-align: center;
 }
 
 .btn {
@@ -41,6 +47,7 @@ header {
     min-height: 100vh;
 }
 
+
 /*.our-work>a {
     color: transparent;
 }*/
@@ -49,14 +56,15 @@ header {
     padding-top: 50px;
 }
 
+
 /*our-work container*/
 
-.thumbs{
+.thumbs {
     width: 100%;
     min-height: 178px !important;
 }
 
-.blue{
+.blue {
     background-color: blue;
 }
 
@@ -65,7 +73,7 @@ header {
     max-height: 50%;
 }
 
-.loader p{
+.loader p {
     text-align: center;
     text-transform: uppercase;
     margin-top: 40px;
@@ -175,6 +183,28 @@ header {
 
 #how-work-detail {
     width: 100%;
+}
+
+.icons {
+    min-height: 310px !important;
+    text-align: center;
+    cursor: pointer;
+}
+
+.icons a {
+    color: #313131;
+    text-decoration: none;
+}
+
+.popover{
+    width: 300px;
+}
+.popover-title {
+    color: #e15233;
+}
+
+.popover-content {
+
 }
 
 
