@@ -179,11 +179,15 @@ header {
 /*how it works*/
 
 .how-work h1{
-    padding-bottom: 60px;
 }
-.how-work p{
+.how-work h5{
     text-align: center;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
+}
+
+.how-work p{
+    padding-top: 40px;
+    text-align: center;
 }
 
 .icons {
