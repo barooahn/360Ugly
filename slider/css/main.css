@@ -186,7 +186,7 @@ header {
 }
 
 .icons {
-    min-height: 310px !important;
+    min-height: 315px !important;
     text-align: center;
     cursor: pointer;
 }
@@ -199,10 +199,8 @@ header {
 .popover {
     width: 300px;
 }
-
 .popover.bottom {
-    padding-top: 0;
-    margin-top: 0;
+    margin-top: -120px;
 }
 
 .popover-title {
