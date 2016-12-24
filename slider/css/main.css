@@ -44,14 +44,19 @@ header {
     padding-bottom: 40px !important;
 }
 
+header .logo{
+    width:470px;
+    padding-left: 30px;
+}
+
+header span{
+    float:left;
+    text-align: center;
+}
+
 .full-height {
     min-height: 100vh;
 }
-
-
-/*.our-work>a {
-    color: transparent;
-}*/
 
 .how-work, .our-work, .pricing, .contact {
     padding-top: 50px;
@@ -59,6 +64,14 @@ header {
 
 
 /*our-work container*/
+
+.thumbs-container a img {
+    border: 1px;
+    border-style: solid;
+    border-color: #e25333;
+    border-radius: 5px;
+    margin: 15px 2px;
+}
 
 .thumbs {
     width: 100%;
@@ -154,6 +167,8 @@ header {
 .get-results {
     background-color: #f4f0ef;
     padding-bottom: 85px;
+    margin-left: -15px;
+    margin-right: -15px;
 }
 
 .get-results-left img {
@@ -162,7 +177,7 @@ header {
 }
 
 .get-results-padding {
-    padding-top: 23%;
+    padding-top: 40px;
     padding-bottom: 40px;
 }
 
@@ -178,14 +193,14 @@ header {
 
 /*how it works*/
 
-.how-work h1{
-}
-.how-work h5{
+.how-work h1 {}
+
+.how-work h5 {
     text-align: center;
     padding-bottom: 40px;
 }
 
-.how-work p{
+.how-work p {
     padding-top: 40px;
     text-align: center;
 }
@@ -204,6 +219,7 @@ header {
 .popover {
     width: 300px;
 }
+
 .popover.bottom {
     /*margin-top: -20px;*/
 }
@@ -224,7 +240,7 @@ header {
     color: #e25333;
 }
 
-.pricing h4{
+.pricing h4 {
     padding-top: 20px;
 }
 
@@ -241,6 +257,7 @@ header {
     margin: 20px;
     background-color: white;
 }
+
 .one-product, .two-products, .more-products, .pricing-button {
     margin-top: 15px;
     text-align: center;
@@ -261,4 +278,11 @@ header {
 
 .pricing-button {
     padding-bottom: 22px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 988px) {
+    .thumbs {
+        width: 100%;
+        min-height: 235px !important;
+    }
 }
