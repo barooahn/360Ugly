@@ -8,7 +8,27 @@ body {
     font-family: 'Open Sans', sans-serif;
     color: #313131;
 }
+html {
+  font-size: 14px;
+}
 
+@include media-breakpoint-up(sm) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  html {
+    font-size: 20px;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  html {
+    font-size: 28px;
+  }
+}
 h1 {
     color: #e25333;
     text-align: center;
@@ -167,17 +187,23 @@ header span{
 .get-results {
     background-color: #f4f0ef;
     padding-bottom: 85px;
-    margin-left: -15px;
-    margin-right: -15px;
+    padding-left: -15px;
+    padding-right: -15px;
 }
 
 .get-results-left img {
     display: block;
     margin: 0 auto;
+    float: right;
+}
+
+.get-results-text{
+    max-width: 350px;
+    margin-top: 0;
 }
 
 .get-results-padding {
-    padding-top: 40px;
+    padding-top: 12%;
     padding-bottom: 40px;
 }
 
