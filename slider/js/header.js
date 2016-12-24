@@ -3,18 +3,15 @@ var frames = SpriteSpin.sourceArray('slider/images/uglyman2_small/DSC_{frame}.jp
     digits: 4
 });
 
-var width = $(window).width() - 20;
+var width = $('.uglyman').width() - 10;
+var height = width / 1.5;
 var spin = $('.uglyman');
 // initialise spritespin
 spin.spritespin({
-    source: frames,
-    width: width,
-    sense: 2,
-    sizeMode: 'fit',
-    scrollThreshold: 3000,
-    frameTime: 100, // Time in ms between updates. 40 is exactly 25 FPS
-    detectSubsampling: false,
-    animate: true,
+      source: frames,
+        width: width,
+        height: height,
+
 });
 spin.bind("onLoad", function() {
     $('.loader').css({

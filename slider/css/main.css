@@ -8,27 +8,29 @@ body {
     font-family: 'Open Sans', sans-serif;
     color: #313131;
 }
+
 html {
-  font-size: 14px;
+    font-size: 14px;
 }
 
 @include media-breakpoint-up(sm) {
-  html {
-    font-size: 16px;
-  }
+    html {
+        font-size: 16px;
+    }
 }
 
 @include media-breakpoint-up(md) {
-  html {
-    font-size: 20px;
-  }
+    html {
+        font-size: 20px;
+    }
 }
 
 @include media-breakpoint-up(lg) {
-  html {
-    font-size: 28px;
-  }
+    html {
+        font-size: 28px;
+    }
 }
+
 h1 {
     color: #e25333;
     text-align: center;
@@ -65,22 +67,56 @@ header {
     text-align: left !important;
 }
 
-header .logo{
+header .logo {
     /*width:470px;*/
     padding-left: 30px;
 }
 
-header h1, header h4{
+header h1, header h4 {
     text-align: left !important;
     margin-top: 0;
     margin-bottom: 0;
 }
 
-.uglyman {
-    margin: 20% auto 0 auto;
-    max-width: 100%;
-    max-height: 50%;
 
+/*down arrow*/
+
+.arrow {
+    text-align: center;
+    margin: 8% 0;
+    position: absolute;
+    bottom: -20px;
+    right: 20px
+}
+
+.arrow a {
+    color: #e25333;
+}
+
+.bounce {
+    -moz-animation: bounce 2s 3;
+    -webkit-animation: bounce 2s 3;
+    animation: bounce 2s 3;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+
+/*end of down arrow*/
+
+.uglyman {
+    margin: 0 auto;
+    max-width: 50%;
 }
 
 .full-height {
@@ -94,7 +130,7 @@ header h1, header h4{
 
 /*our-work container*/
 
-.thumbs-container a img{
+.thumbs-container a img {
     border: 1px;
     border-style: solid;
     border-color: #e25333;
@@ -206,7 +242,7 @@ header h1, header h4{
     float: right;
 }
 
-.get-results-text{
+.get-results-text {
     max-width: 350px;
     margin-top: 0;
 }
