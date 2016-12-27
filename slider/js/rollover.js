@@ -48,11 +48,7 @@ var framesArray = {
         digits: 4
     },
 }
-$(".thumbs-container").mouseover(function() {
-    $(this+' a img').addClass("blue");
-}).mouseout(function() {
-    $(this+' a img').removeClass("blue");
-});
+
 $(".rollover-modal").click(function(e) {
     $('.loader').css({
             opacity: 0,
@@ -72,6 +68,10 @@ $(".rollover-modal").click(function(e) {
     });
     var spin = $('.' + id360);
     // initialise spritespin
+    $('.full-screen').click(function(e){
+        spin.spritespin('api').requestFullscreen();
+    });
+
     spin.spritespin({
         source: frames,
         width: width,
