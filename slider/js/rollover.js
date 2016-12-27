@@ -48,10 +48,10 @@ var framesArray = {
         digits: 4
     },
 }
-$(".rollover-modal").mouseover(function() {
-    $(this).addClass("blue");
+$(".thumbs-container").mouseover(function() {
+    $(this+' a img').addClass("blue");
 }).mouseout(function() {
-    $(this).removeClass("blue");
+    $(this+' a img').removeClass("blue");
 });
 $(".rollover-modal").click(function(e) {
     $('.loader').css({

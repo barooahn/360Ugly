@@ -11,7 +11,7 @@ spin.spritespin({
       source: frames,
         width: width,
         height: height,
-
+        frameTime: 120
 });
 spin.bind("onLoad", function() {
     $('.loader').css({

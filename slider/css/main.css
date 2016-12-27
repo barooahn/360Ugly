@@ -124,7 +124,7 @@ header h1, header h4 {
 }
 
 .how-work, .our-work, .pricing, .contact, .results, .uglyman {
-    padding-top: 50px;
+    padding-top: 70px;
 }
 
 
@@ -141,10 +141,6 @@ header h1, header h4 {
 .thumbs {
     width: 100%;
     min-height: 178px !important;
-}
-
-.blue {
-    background-color: blue;
 }
 
 .modal-spin {
@@ -226,6 +222,24 @@ header h1, header h4 {
     }
 }
 
+.thumbs-container a:after {
+    content:'\A';
+    position:absolute;
+    width:100%; height:100%;
+    top:0; left:0;
+    border-radius: 5px;
+    /*margin: 15px;*/
+    padding 15px;
+    background-image:url('/slider/images/overlay.png');
+     background-size:contain;
+background-position:center;
+    opacity:0;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+.thumbs-container a:hover:after {
+    opacity:1;
+}
 
 /*get-results container*/
 
@@ -291,16 +305,13 @@ header h1, header h4 {
     width: 300px;
 }
 
-.popover.bottom {
-    /*margin-top: -20px;*/
-}
-
 .popover-title {
     color: #e15233;
 }
 
-.popover-content {}
-
+/*.arrow {
+    top: -33px !important;
+}*/
 
 /*pricing*/
 
